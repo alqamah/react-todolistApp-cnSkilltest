@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body{
+  background-color: rgb(197, 215, 209);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-size: 2.5rem;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 15px;
+  word-spacing: 30px;
+  background-color: beige;
 }

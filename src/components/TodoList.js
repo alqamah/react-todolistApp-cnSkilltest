@@ -12,7 +12,7 @@ function TodoList({ todos, updateTodo, deleteTodo }) {
               checked={todo.completed}
               onChange={() => updateTodo(todo.id, !todo.completed)}
             />
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <button onClick={() => deleteTodo(todo.id)}> <i className="fas fa-trash-alt"></i></button>
           </div>
         </li>
       ))}

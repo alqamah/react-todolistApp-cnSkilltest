@@ -59,18 +59,16 @@ h1 {
   font-size: 16px;
 }
 
-.add-todo-form button {
-  padding: 5px 10px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
+ul{
+  padding: 50px;
+  background-color: #edfbff;
+  margin: 0 -75px;
+  border-radius: 10px;
 }
 
 .todo-list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .todo-list li {
@@ -78,7 +76,18 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  height: 30px;
+  border-bottom: 2px solid #4949494d;
+  transition: .2s ease-in-out;
+}
+.todo-list li:hover{
+  background-color: white;
+}
+
+.todo-list div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .todo-list li.completed span {
@@ -86,10 +95,65 @@ h1 {
   color: #888;
 }
 
+.todo-list input{    
+  font-family: system-ui, sans-serif;
+  font-size: 1.01rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  margin: 0 10px;
+  transition: 0.2s ease-in-out;
+}
+.todo-list input[type="checkbox"]:hover {
+  outline: max(2px, 0.15em) solid olivedrab;
+  outline-offset: max(0px, 0.25rem);
+  border-radius: 5px;
+}
+
+input{
+  border-radius: 3px;
+  border: 2px solid beige;
+  height: 30px;
+}
+
+.del-btn{
+  background-color: white;
+  border-radius: 3px;
+}
+
+.add-todo-form button {
+  padding: 5px 20px;
+  background-color: white;
+  font-size: 16px;
+  border: 2px solid beige;
+  color: rgb(60, 60, 60);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: .2s ease-in-out;
+}
+.add-todo-form button:hover {
+  background-color: #4caf4f;
+  color: white;
+}
+
 .todo-list li button {
   padding: 5px 10px;
-  background-color: #f44336;
-  color: white;
-  border: none;
+  border: 1px solid #f44336;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 2px;
   cursor: pointer;
+  transition: .2s ease-in-out;
+  font-size: 16px;
 }
+
+.todo-list li button:hover{
+  color: white;
+  background-color: red;
+  cursor: default;
+}
+
+

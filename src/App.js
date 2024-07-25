@@ -14,7 +14,7 @@ function App() {
     try {
       const response = await fetch('https://jsonplaceholder.typicode.com/todos');
       const data = await response.json();
-      setTodos(data.slice(0, 10)); // Limit to 10 items for simplicity
+      setTodos(data.slice(0,7)); // Limit to 10 items for simplicity
     } catch (error) {
       console.error('Error fetching todos:', error);
     }
@@ -72,7 +72,9 @@ function App() {
     <div className="App">
       <h1>Todo List</h1>
       <AddTodoForm addTodo={addTodo} />
-      <TodoList todos={todos} updateTodo={updateTodo} deleteTodo={deleteTodo} />
+      <div className='todo-list-div'> 
+        <TodoList todos={todos} updateTodo={updateTodo} deleteTodo={deleteTodo} />
+      </div>  
     </div>
   );
 }

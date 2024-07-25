@@ -19,7 +19,7 @@ function AddTodoForm({ addTodo }) {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add a new todo"
       />
-      <button type="submit">Add</button>
+      <button className='add-btn' type="submit">Add</button>
     </form>
   );
 }
