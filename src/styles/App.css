@@ -71,6 +71,7 @@ ul{
   margin: 0 -150px;
   border-radius: 10px;
   border: solid 10px white;
+  box-shadow: 0 -1px 10px 2px rgba(82, 106, 99, 0.427);
 }
 
 .todo-list {
@@ -126,7 +127,7 @@ ul{
 
 input{
   border-radius: 3px;
-  border: 2px solid rgb(211, 255, 192);
+  border: 3px solid rgb(211, 255, 192);
   height: 30px;
 }
 
@@ -139,12 +140,13 @@ input{
   padding: 0px 20px;
   background-color: white;
   font-size: 16px;
-  border: 2px solid rgba(137, 43, 226, 0.321);
+  border: 3px solid rgba(137, 43, 226, 0.321);
   color: rgb(60, 60, 60);
   cursor: pointer;
   border-radius: 5px;
   margin-left: 10px;
   transition: .2s ease-in-out;
+  box-shadow: 0 5px 10px 2px rgba(82, 106, 99, 0.427);
 }
 .add-todo-form button:hover {
   background-color: #7bdb80;
