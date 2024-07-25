@@ -8,11 +8,12 @@ function TodoList({ todos, updateTodo, deleteTodo }) {
           <span>{todo.title}</span>
           <div>
             <input
+              title='Toggle Completed Status'
               type="checkbox"
               checked={todo.completed}
               onChange={() => updateTodo(todo.id, !todo.completed)}
             />
-            <button onClick={() => deleteTodo(todo.id)}> <i className="fas fa-trash-alt"></i></button>
+            <button title='Delete Todo' onClick={() => deleteTodo(todo.id)}> <i className="fas fa-trash-alt"></i></button>
           </div>
         </li>
       ))}
