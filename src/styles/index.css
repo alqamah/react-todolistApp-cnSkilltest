@@ -14,7 +14,7 @@ code {
 }
 
 body{
-  background-color: rgb(197, 215, 209);
+  background-color: rgb(233, 255, 248);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,5 +30,5 @@ h1{
   width: 100%;
   letter-spacing: 15px;
   word-spacing: 30px;
-  background-color: beige;
+  background-color: pink;
 }
